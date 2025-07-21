@@ -1,0 +1,102 @@
+.car {
+  background: rgba(0, 0, 0, 0.959);
+  padding-bottom: 80px;
+}
+.audio-card {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  max-width: 1500px;
+  width: 100%;
+
+  .album-cover {
+    width: 160px;
+    height: 160px;
+    border-radius: 15px;
+    background: linear-gradient(45deg, #4a90e2, #50c8e8);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    flex-shrink: 0;
+
+    .play-button {
+      width: 50px;
+      height: 50px;
+      background: #ff8c42;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      margin-bottom: 10px;
+
+      &::after {
+        content: "▶";
+        color: white;
+        font-size: 18px;
+        margin-left: 2px;
+      }
+    }
+
+    .author-name {
+      color: white;
+      font-size: 14px;
+      font-weight: bold;
+      text-align: center;
+      line-height: 1.2;
+    }
+
+    .book-title {
+      color: white;
+      font-size: 16px;
+      font-weight: bold;
+      text-align: center;
+      margin-top: 5px;
+    }
+  }
+
+  .content {
+    flex: 1;
+
+    h2 {
+      font-size: 24px;
+      color: white;
+      margin-bottom: 15px;
+      font-weight: bold;
+    }
+
+    p {
+      color: rgba(255, 255, 255, 0.8);
+      line-height: 1.6;
+      font-size: 14px;
+      margin-bottom: 25px;
+    }
+  }
+  .get-discount-btn {
+    background: #ff8c42;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 14px;
+  }
+
+  @media (max-width: 600px) {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+
+    .content {
+      h2 {
+        font-size: 20px;
+      }
+    }
+  }
+}

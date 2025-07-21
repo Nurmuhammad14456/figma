@@ -1,0 +1,88 @@
+.reclama {
+  padding-top: 100px;
+  background: rgba(0, 0, 0, 0.986);
+  min-height: 40vh;
+
+  .reclama__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+
+    .wper {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      width: 48%;
+
+      .cerd {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        padding: 40px;
+        border: 2px solid #ffffff4d;
+        border-radius: 20px;
+        background-color: transparent;
+
+        img {
+          width: 70px;
+          height: 70px;
+        }
+
+        h2 {
+          color: white;
+          font-size: 20px;
+          line-height: 1.4;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 950px) {
+    .reclama__wrapper {
+      flex-direction: column;
+      align-items: center;
+
+      .wper {
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .cerd {
+          width: 45%;
+          padding: 30px;
+
+          h2 {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 600px) {
+    .reclama__wrapper {
+      .wper {
+        flex-direction: column;
+        align-items: center;
+
+        .cerd {
+          width: 100%;
+          padding: 25px;
+          flex-direction: column;
+          text-align: center;
+
+          img {
+            width: 50px;
+            height: 50px;
+          }
+
+          h2 {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+}
